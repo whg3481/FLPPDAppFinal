@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  FLPPDAppFinal
+//  FLPPDapp
 //
-//  Created by New User on 12/6/16.
+//  Created by New User on 11/27/16.
 //  Copyright © 2016 Will Garner. All rights reserved.
 //
 
@@ -17,9 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+    // Override point for customization after application launch.
+    
     FIRApp.configure()
-
+    
+    /*FIRAuth.auth()?.signIn(withEmail: "will.ggrd@gmail.com", password: "sporty23", completion: { (user:FIRUser?, error:Error?) in
+      if error == nil {
+        print(user?.email)
+      } else {
+        //This localized Description could be a potential problem because in the example he only used description
+        print(error?.localizedDescription)
+      }
+    })*/
+    
     return true
   }
 
@@ -56,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        application to it. This property is optional since there are legitimate
        error conditions that could cause the creation of the store to fail.
       */
-      let container = NSPersistentContainer(name: "FLPPDAppFinal")
+      let container = NSPersistentContainer(name: "FLPPDapp")
       container.loadPersistentStores(completionHandler: { (storeDescription, error) in
           if let error = error as NSError? {
               // Replace this implementation with code to handle the error appropriately.

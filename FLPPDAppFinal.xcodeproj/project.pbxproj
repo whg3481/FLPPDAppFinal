@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A5272D3583255DDECD48187C /* Pods_FLPPDAppFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C373BD8A563C18A316A65F77 /* Pods_FLPPDAppFinal.framework */; };
-		B2B2501D1DF75CB200495981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B2501C1DF75CB200495981 /* AppDelegate.swift */; };
+		B218B9941DF9C48A00A210C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B9931DF9C48A00A210C8 /* AppDelegate.swift */; };
+		B218B9981DF9C4E200A210C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B9951DF9C4E200A210C8 /* ViewController.swift */; };
+		B218B9991DF9C4E200A210C8 /* ListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B9961DF9C4E200A210C8 /* ListingTableViewController.swift */; };
+		B218B99A1DF9C4E200A210C8 /* AddNewListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B9971DF9C4E200A210C8 /* AddNewListingViewController.swift */; };
+		B218B99D1DF9C51200A210C8 /* ListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B99B1DF9C51200A210C8 /* ListingVC.swift */; };
+		B218B99E1DF9C51200A210C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B99C1DF9C51200A210C8 /* User.swift */; };
+		B218B9A31DF9D66900A210C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */; };
 		B2B250221DF75CB200495981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B250201DF75CB200495981 /* Main.storyboard */; };
 		B2B250251DF75CB200495981 /* FLPPDAppFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2B250231DF75CB200495981 /* FLPPDAppFinal.xcdatamodeld */; };
 		B2B250271DF75CB200495981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B250261DF75CB200495981 /* Assets.xcassets */; };
 		B2B2502A1DF75CB200495981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B250281DF75CB200495981 /* LaunchScreen.storyboard */; };
 		B2B250351DF75CB300495981 /* FLPPDAppFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B250341DF75CB300495981 /* FLPPDAppFinalTests.swift */; };
-		B2B250401DF7612400495981 /* PropertyFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B2503F1DF7612400495981 /* PropertyFeedTableViewController.swift */; };
-		B2B250421DF761D100495981 /* AddNewPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B250411DF761D100495981 /* AddNewPropertyViewController.swift */; };
-		B2B250441DF8766B00495981 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2B250431DF8766B00495981 /* GoogleService-Info.plist */; };
 		E3C3B22ED72E340472A18772 /* Pods_FLPPDAppFinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0910F43AD26D08831237A3D /* Pods_FLPPDAppFinalTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +37,14 @@
 		482413194200E7BA9A7531AF /* Pods-FLPPDAppFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLPPDAppFinal.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLPPDAppFinal/Pods-FLPPDAppFinal.release.xcconfig"; sourceTree = "<group>"; };
 		5A5F2619CC711F5B0A6F4485 /* Pods-FLPPDAppFinalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLPPDAppFinalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLPPDAppFinalTests/Pods-FLPPDAppFinalTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7804D6654DE4A7C620FFD40 /* Pods-FLPPDAppFinalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLPPDAppFinalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLPPDAppFinalTests/Pods-FLPPDAppFinalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B218B9931DF9C48A00A210C8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B218B9951DF9C4E200A210C8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B218B9961DF9C4E200A210C8 /* ListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewController.swift; sourceTree = "<group>"; };
+		B218B9971DF9C4E200A210C8 /* AddNewListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewListingViewController.swift; sourceTree = "<group>"; };
+		B218B99B1DF9C51200A210C8 /* ListingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
+		B218B99C1DF9C51200A210C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B2B250191DF75CB200495981 /* FLPPDAppFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLPPDAppFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2B2501C1DF75CB200495981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2B250211DF75CB200495981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2B250241DF75CB200495981 /* FLPPDAppFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FLPPDAppFinal.xcdatamodel; sourceTree = "<group>"; };
 		B2B250261DF75CB200495981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,9 +53,6 @@
 		B2B250301DF75CB300495981 /* FLPPDAppFinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLPPDAppFinalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B250341DF75CB300495981 /* FLPPDAppFinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLPPDAppFinalTests.swift; sourceTree = "<group>"; };
 		B2B250361DF75CB300495981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2B2503F1DF7612400495981 /* PropertyFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyFeedTableViewController.swift; sourceTree = "<group>"; };
-		B2B250411DF761D100495981 /* AddNewPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPropertyViewController.swift; sourceTree = "<group>"; };
-		B2B250431DF8766B00495981 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C373BD8A563C18A316A65F77 /* Pods_FLPPDAppFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLPPDAppFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB99C14AE05A08BE983DB7C8 /* Pods-FLPPDAppFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLPPDAppFinal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLPPDAppFinal/Pods-FLPPDAppFinal.debug.xcconfig"; sourceTree = "<group>"; };
 		F0910F43AD26D08831237A3D /* Pods_FLPPDAppFinalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLPPDAppFinalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B218B99F1DF9C51900A210C8 /* Model for User Tweet */ = {
+			isa = PBXGroup;
+			children = (
+				B218B99B1DF9C51200A210C8 /* ListingVC.swift */,
+				B218B99C1DF9C51200A210C8 /* User.swift */,
+			);
+			name = "Model for User Tweet";
+			sourceTree = "<group>";
+		};
 		B2B250101DF75CB200495981 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +119,13 @@
 		B2B2501B1DF75CB200495981 /* FLPPDAppFinal */ = {
 			isa = PBXGroup;
 			children = (
-				B2B250431DF8766B00495981 /* GoogleService-Info.plist */,
-				B2B2501C1DF75CB200495981 /* AppDelegate.swift */,
+				B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */,
+				B218B9931DF9C48A00A210C8 /* AppDelegate.swift */,
 				B2B250201DF75CB200495981 /* Main.storyboard */,
-				B2B250411DF761D100495981 /* AddNewPropertyViewController.swift */,
-				B2B2503F1DF7612400495981 /* PropertyFeedTableViewController.swift */,
+				B218B9951DF9C4E200A210C8 /* ViewController.swift */,
+				B218B9961DF9C4E200A210C8 /* ListingTableViewController.swift */,
+				B218B9971DF9C4E200A210C8 /* AddNewListingViewController.swift */,
+				B218B99F1DF9C51900A210C8 /* Model for User Tweet */,
 				B2B250261DF75CB200495981 /* Assets.xcassets */,
 				B2B250281DF75CB200495981 /* LaunchScreen.storyboard */,
 				B2B2502B1DF75CB200495981 /* Info.plist */,
@@ -230,8 +247,8 @@
 			files = (
 				B2B2502A1DF75CB200495981 /* LaunchScreen.storyboard in Resources */,
 				B2B250271DF75CB200495981 /* Assets.xcassets in Resources */,
-				B2B250441DF8766B00495981 /* GoogleService-Info.plist in Resources */,
 				B2B250221DF75CB200495981 /* Main.storyboard in Resources */,
+				B218B9A31DF9D66900A210C8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2B250421DF761D100495981 /* AddNewPropertyViewController.swift in Sources */,
-				B2B250401DF7612400495981 /* PropertyFeedTableViewController.swift in Sources */,
+				B218B9991DF9C4E200A210C8 /* ListingTableViewController.swift in Sources */,
+				B218B9981DF9C4E200A210C8 /* ViewController.swift in Sources */,
+				B218B9941DF9C48A00A210C8 /* AppDelegate.swift in Sources */,
+				B218B99D1DF9C51200A210C8 /* ListingVC.swift in Sources */,
+				B218B99A1DF9C4E200A210C8 /* AddNewListingViewController.swift in Sources */,
 				B2B250251DF75CB200495981 /* FLPPDAppFinal.xcdatamodeld in Sources */,
-				B2B2501D1DF75CB200495981 /* AppDelegate.swift in Sources */,
+				B218B99E1DF9C51200A210C8 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +579,7 @@
 				B2B2503B1DF75CB300495981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2B2503C1DF75CB300495981 /* Build configuration list for PBXNativeTarget "FLPPDAppFinalTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +588,7 @@
 				B2B2503E1DF75CB300495981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
