@@ -19,9 +19,9 @@
     var dbRef:FIRDatabaseReference!
     var listings = [Listing]()
     
-    var addedByUser = ""
-    var content = ""
-    
+    var address = ""
+    var city = ""
+    var ARV = ""
     
     
     override func viewDidLoad() {
@@ -29,7 +29,7 @@
       
       
       dbRef = FIRDatabase.database().reference().child("listing-items")
-      //  startObservingDB()
+        startObservingDB()
     }
     
     func startObservingDB () {
@@ -37,6 +37,7 @@
         var newListings = [Listing]()
         
         for listing in snapshot.children {
+          print("json: \(listing)")
           let listingObject = Listing(snapshot: listing as! FIRDataSnapshot)
     
           newListings.append(listingObject)
@@ -67,29 +68,43 @@
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+     /* let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
       
       let listing = listings[indexPath.row]
-      
       
       
       cell.textLabel?.text = listing.address
       cell.detailTextLabel?.text = listing.addedByUser
       
-      return cell
+      return cell*/
       
       
-      /* var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+      let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+      
+      let listing = listings[indexPath.row]
+
       
       let label1 = cell?.viewWithTag(1) as! UILabel
-      label1.text = posts[indexPath.row].title
+      label1.text = listing.address
       
       let label2 = cell?.viewWithTag(2) as! UILabel
-      label2.text = posts[indexPath.row].message
+      label2.text = listing.ARV
+      
+      //create the imageview
+      
+      //download the image in a thread
       
       
-      return cell!*/
+      
+      return cell!
     
+    
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      let listing = listings[indexPath.row]
+      
+      print(listing.address)
     }
     
     

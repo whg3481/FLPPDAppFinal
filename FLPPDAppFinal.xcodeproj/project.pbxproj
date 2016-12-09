@@ -44,6 +44,7 @@
 		B218B99B1DF9C51200A210C8 /* ListingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
 		B218B99C1DF9C51200A210C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B29221F01DFA486D00C2788A /* FLPPDAppFinal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FLPPDAppFinal.entitlements; sourceTree = "<group>"; };
 		B2B250191DF75CB200495981 /* FLPPDAppFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLPPDAppFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B250211DF75CB200495981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2B250241DF75CB200495981 /* FLPPDAppFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FLPPDAppFinal.xcdatamodel; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		B2B2501B1DF75CB200495981 /* FLPPDAppFinal */ = {
 			isa = PBXGroup;
 			children = (
+				B29221F01DFA486D00C2788A /* FLPPDAppFinal.entitlements */,
 				B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */,
 				B218B9931DF9C48A00A210C8 /* AppDelegate.swift */,
 				B2B250201DF75CB200495981 /* Main.storyboard */,
@@ -212,6 +214,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = SK2ZM3X36D;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					B2B2502F1DF75CB300495981 = {
 						CreatedOnToolsVersion = 8.0;
@@ -505,6 +512,7 @@
 			baseConfigurationReference = DB99C14AE05A08BE983DB7C8 /* Pods-FLPPDAppFinal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FLPPDAppFinal/FLPPDAppFinal.entitlements;
 				DEVELOPMENT_TEAM = SK2ZM3X36D;
 				INFOPLIST_FILE = FLPPDAppFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -519,6 +527,7 @@
 			baseConfigurationReference = 482413194200E7BA9A7531AF /* Pods-FLPPDAppFinal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FLPPDAppFinal/FLPPDAppFinal.entitlements;
 				DEVELOPMENT_TEAM = SK2ZM3X36D;
 				INFOPLIST_FILE = FLPPDAppFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

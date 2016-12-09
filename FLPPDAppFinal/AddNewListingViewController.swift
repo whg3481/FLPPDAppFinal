@@ -34,7 +34,8 @@ class AddNewListingViewController: UIViewController {
     
     let dictionary = ["address":Address.text!,"zipcode":Zipcode.text!,"State":State.text!,"City":City.text!,"After Repair Value":ARV.text!,"List Price":ListPrice.text!,"Property Description":PropertyDescription.text!]
     
-    let propertyListing = self.dbRef.childByAutoId()
+    dbRef = FIRDatabase.database().reference().child("listing-items")
+    let propertyListing = self.dbRef.childByAutoId() //.childByAutoId()
     propertyListing.setValue(dictionary)
     
     
@@ -52,7 +53,7 @@ class AddNewListingViewController: UIViewController {
         super.viewDidLoad()
 
       
-      dbRef = FIRDatabase.database().reference().childByAutoId()
+      
   
       
   }
@@ -64,7 +65,7 @@ class AddNewListingViewController: UIViewController {
     
 
     /*
-    // MARK: - Navigation
+    // MARK: - USE This for seguing to detail view controller about the property information
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
