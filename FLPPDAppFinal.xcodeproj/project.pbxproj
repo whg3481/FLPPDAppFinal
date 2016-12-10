@@ -15,6 +15,12 @@
 		B218B99D1DF9C51200A210C8 /* ListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B99B1DF9C51200A210C8 /* ListingVC.swift */; };
 		B218B99E1DF9C51200A210C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B99C1DF9C51200A210C8 /* User.swift */; };
 		B218B9A31DF9D66900A210C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */; };
+		B27DDECD1DFB85F1000EA389 /* EvaluateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDECC1DFB85F1000EA389 /* EvaluateTableViewController.swift */; };
+		B27DDECF1DFBA016000EA389 /* PropertyInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDECE1DFBA016000EA389 /* PropertyInformationTableViewController.swift */; };
+		B27DDED21DFBCD1A000EA389 /* BuyingCostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDED11DFBCD1A000EA389 /* BuyingCostsTableViewController.swift */; };
+		B27DDED51DFBCD71000EA389 /* HoldingCostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDED41DFBCD71000EA389 /* HoldingCostsTableViewController.swift */; };
+		B27DDED71DFBCD87000EA389 /* SellingCostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDED61DFBCD87000EA389 /* SellingCostsTableViewController.swift */; };
+		B27DDED91DFBCD9B000EA389 /* OtherCostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDED81DFBCD9B000EA389 /* OtherCostsTableViewController.swift */; };
 		B29221F51DFB589000C2788A /* 300New Centuri Advisors Logo No Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B29221F41DFB589000C2788A /* 300New Centuri Advisors Logo No Background.png */; };
 		B2B250221DF75CB200495981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B250201DF75CB200495981 /* Main.storyboard */; };
 		B2B250251DF75CB200495981 /* FLPPDAppFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2B250231DF75CB200495981 /* FLPPDAppFinal.xcdatamodeld */; };
@@ -45,6 +51,12 @@
 		B218B99B1DF9C51200A210C8 /* ListingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
 		B218B99C1DF9C51200A210C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B27DDECC1DFB85F1000EA389 /* EvaluateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluateTableViewController.swift; sourceTree = "<group>"; };
+		B27DDECE1DFBA016000EA389 /* PropertyInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInformationTableViewController.swift; sourceTree = "<group>"; };
+		B27DDED11DFBCD1A000EA389 /* BuyingCostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyingCostsTableViewController.swift; sourceTree = "<group>"; };
+		B27DDED41DFBCD71000EA389 /* HoldingCostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingCostsTableViewController.swift; sourceTree = "<group>"; };
+		B27DDED61DFBCD87000EA389 /* SellingCostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellingCostsTableViewController.swift; sourceTree = "<group>"; };
+		B27DDED81DFBCD9B000EA389 /* OtherCostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCostsTableViewController.swift; sourceTree = "<group>"; };
 		B29221F41DFB589000C2788A /* 300New Centuri Advisors Logo No Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "300New Centuri Advisors Logo No Background.png"; sourceTree = "<group>"; };
 		B2B250191DF75CB200495981 /* FLPPDAppFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLPPDAppFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B250211DF75CB200495981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +110,29 @@
 			name = "Model for User Tweet";
 			sourceTree = "<group>";
 		};
+		B27DDED01DFBA023000EA389 /* Evaluation View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B27DDECC1DFB85F1000EA389 /* EvaluateTableViewController.swift */,
+				B27DDED11DFBCD1A000EA389 /* BuyingCostsTableViewController.swift */,
+				B27DDECE1DFBA016000EA389 /* PropertyInformationTableViewController.swift */,
+				B27DDED41DFBCD71000EA389 /* HoldingCostsTableViewController.swift */,
+				B27DDED61DFBCD87000EA389 /* SellingCostsTableViewController.swift */,
+				B27DDED81DFBCD9B000EA389 /* OtherCostsTableViewController.swift */,
+			);
+			name = "Evaluation View Controllers";
+			sourceTree = "<group>";
+		};
+		B27DDED31DFBCD40000EA389 /* Property Feed View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B218B9951DF9C4E200A210C8 /* ViewController.swift */,
+				B218B9961DF9C4E200A210C8 /* ListingTableViewController.swift */,
+				B218B9971DF9C4E200A210C8 /* AddNewListingViewController.swift */,
+			);
+			name = "Property Feed View Controllers";
+			sourceTree = "<group>";
+		};
 		B2B250101DF75CB200495981 = {
 			isa = PBXGroup;
 			children = (
@@ -124,9 +159,8 @@
 				B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */,
 				B218B9931DF9C48A00A210C8 /* AppDelegate.swift */,
 				B2B250201DF75CB200495981 /* Main.storyboard */,
-				B218B9951DF9C4E200A210C8 /* ViewController.swift */,
-				B218B9961DF9C4E200A210C8 /* ListingTableViewController.swift */,
-				B218B9971DF9C4E200A210C8 /* AddNewListingViewController.swift */,
+				B27DDED01DFBA023000EA389 /* Evaluation View Controllers */,
+				B27DDED31DFBCD40000EA389 /* Property Feed View Controllers */,
 				B218B99F1DF9C51900A210C8 /* Model for User Tweet */,
 				B2B250261DF75CB200495981 /* Assets.xcassets */,
 				B29221F41DFB589000C2788A /* 300New Centuri Advisors Logo No Background.png */,
@@ -363,12 +397,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27DDED21DFBCD1A000EA389 /* BuyingCostsTableViewController.swift in Sources */,
 				B218B9991DF9C4E200A210C8 /* ListingTableViewController.swift in Sources */,
+				B27DDED91DFBCD9B000EA389 /* OtherCostsTableViewController.swift in Sources */,
 				B218B9981DF9C4E200A210C8 /* ViewController.swift in Sources */,
 				B218B9941DF9C48A00A210C8 /* AppDelegate.swift in Sources */,
 				B218B99D1DF9C51200A210C8 /* ListingVC.swift in Sources */,
+				B27DDED51DFBCD71000EA389 /* HoldingCostsTableViewController.swift in Sources */,
+				B27DDECF1DFBA016000EA389 /* PropertyInformationTableViewController.swift in Sources */,
 				B218B99A1DF9C4E200A210C8 /* AddNewListingViewController.swift in Sources */,
 				B2B250251DF75CB200495981 /* FLPPDAppFinal.xcdatamodeld in Sources */,
+				B27DDED71DFBCD87000EA389 /* SellingCostsTableViewController.swift in Sources */,
+				B27DDECD1DFB85F1000EA389 /* EvaluateTableViewController.swift in Sources */,
 				B218B99E1DF9C51200A210C8 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
