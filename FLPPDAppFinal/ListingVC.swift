@@ -31,7 +31,9 @@ struct Listing {
     itemRef = snapshot.ref
     
     let snapshotValue = snapshot.value as! [String:AnyObject]
-    addedByUser = snapshotValue["addedByUser"] as! String
+    
+    addedByUser = "Will"
+    //addedByUser = snapshotValue["addedByUser"] as! String
     address = snapshotValue["address"] as! String
     
   }

@@ -10,24 +10,40 @@ import UIKit
 
 class SellingCostsTableViewController: UITableViewController {
 
+  @IBOutlet weak var deedPrepFeeTextField: UITextField!
+  @IBOutlet weak var releaseDeedTextField: UITextField!
+  @IBOutlet weak var settlementFeeTextField: UITextField!
+  @IBOutlet weak var realEstateCommissionTextField: UITextField!
+  @IBOutlet weak var realEstateCommissionLabel: UILabel!
+  @IBOutlet weak var realtyTransferTaxPctTextField: UITextField!
+  @IBOutlet weak var realtyTransferTaxLabel: UILabel!
+  @IBOutlet weak var totalSellingCostLabel: UILabel!
+  
+  @IBAction func saveButton(_ sender: AnyObject) {
+    
+    self.dismiss(animated: true, completion: nil)
+  }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+  
+  @IBAction func calculateButton(_ sender: AnyObject) {
+    let reCommission = Double(realEstateCommissionTextField.text!)
+   
+    
+    // var model = SellingCostModel()
+
+    
+    //realEstateCommissionLabel.text = String(model.realEstateCommission())
+
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+  /*  override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
@@ -35,7 +51,7 @@ class SellingCostsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
+    }*/
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -92,4 +108,5 @@ class SellingCostsTableViewController: UITableViewController {
     }
     */
 
+}
 }

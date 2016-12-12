@@ -29,7 +29,7 @@
       
       
       dbRef = FIRDatabase.database().reference().child("listing-items")
-      //  startObservingDB()
+       startObservingDB()
     }
     
     func startObservingDB () {

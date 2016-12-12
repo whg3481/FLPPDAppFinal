@@ -9,6 +9,21 @@
 import UIKit
 
 class BuyingCostsTableViewController: UITableViewController {
+ 
+  @IBOutlet weak var recordingFeesTextField: UITextField!
+  @IBOutlet weak var settlementFeeTextField: UITextField!
+  @IBOutlet weak var titleInsuranceTextField: UITextField!
+  @IBOutlet weak var titleWorkTextField: UITextField!
+  @IBOutlet weak var originationFeePctTextField: UITextField!
+  @IBOutlet weak var originationFeeLabel: UILabel!
+  @IBOutlet weak var totalBuyingCostsLabel: UILabel!
+  
+  
+  @IBAction func saveButton(_ sender: AnyObject) {
+    
+    self.dismiss(animated: true, completion: nil)
+  }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +42,7 @@ class BuyingCostsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+   /* override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
@@ -35,7 +50,7 @@ class BuyingCostsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
+    }*/
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

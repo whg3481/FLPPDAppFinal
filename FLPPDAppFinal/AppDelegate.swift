@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import MapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

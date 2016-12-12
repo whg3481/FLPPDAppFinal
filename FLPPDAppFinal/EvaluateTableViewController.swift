@@ -11,14 +11,68 @@ import UIKit
 class EvaluateTableViewController: UITableViewController {
 
   //var identities = [String]()
+  //MARK: Add all my IB Outlets from the Main Evaluation Static TVC here.
+  
+  @IBOutlet weak var afterRepairValueTextField: UITextField!
+  @IBOutlet weak var RehabCostsTextField: UITextField!
+  @IBOutlet weak var buyingCostsLabel: UILabel!
+  @IBOutlet weak var holdingCostsLabel: UILabel!
+  @IBOutlet weak var sellingCostsLabel: UILabel!
+  @IBOutlet weak var otherCostsLabel: UILabel!
+  @IBOutlet weak var wholesaleFeeTextField: UITextField!
+  @IBOutlet weak var purchasePriceTextField: UITextField!
+  @IBOutlet weak var totalCostsLabel: UILabel!
+  @IBOutlet weak var hardMoneyLTVTexField: UITextField!
+  @IBOutlet weak var downPMTPctTextField: UITextField!
+  @IBOutlet weak var interestRatePctTextField: UITextField!
+  @IBOutlet weak var originationFeeTextField: UITextField!
+  @IBOutlet weak var downPMTLabel: UILabel!
+  @IBOutlet weak var loanToCostPctLabel: UILabel!
+  @IBOutlet weak var loanAmtLabel: UILabel!
+  @IBOutlet weak var projectedProfitLabel: UILabel!
+  @IBOutlet weak var cashRequiredLabel: UILabel!
+  @IBOutlet weak var actualLoanToCostLabel: UILabel!
+  @IBOutlet weak var yieldPctLabel: UILabel!
+  @IBOutlet weak var returnOnInvestmentPctLabel: UILabel!
+  @IBOutlet weak var retainagePctTextField: UITextField!
+  @IBOutlet weak var retainageAmountLabel: UILabel!
+
+
+  
+  
   
     override func viewDidLoad() {
         super.viewDidLoad()
 
       //    identities = ["property","arv"]
-    
       
     }
+  
+  
+  @IBAction func calculateButton(_ sender: AnyObject) {
+    let arv = Double(afterRepairValueTextField.text!)
+    let ltv = Double(hardMoneyLTVTexField.text!)
+    let retainagePct = Double(retainagePctTextField.text!)
+    let rehabCosts = Double(RehabCostsTextField.text!)
+    let wholesaleFee = Double(wholesaleFeeTextField.text!)
+    
+    
+    var model = RehabProfitModel(ARV: arv!, actualLTV: ltv!, constRetainPct:retainagePct!, rehabCost:rehabCosts!, wholesaleFee:wholesaleFee!)
+    
+    
+    loanAmtLabel.text = String(model.loanAmountCalc())
+    
+    // Calculating Retainage Here
+    retainageAmountLabel.text = String(model.constructionRetainage())
+    
+    //Sum of Total Costs
+    totalCostsLabel.text = String(model.totalDevelopmentCost())
+    
+    //Net Profit
+    projectedProfitLabel.text = String(model.netProfit())
+    
+  }
+  
 
   
    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  {
@@ -30,6 +84,11 @@ class EvaluateTableViewController: UITableViewController {
     }
     
     
+    }
+  
+  
+
+  
     /*let vcName = identities[indexPath.row]
     let viewController = storyboard?.instantiateViewController(withIdentifier: vcName)
     self.navigationController?.pushViewController(viewController!, animated: true)*/
@@ -107,4 +166,4 @@ class EvaluateTableViewController: UITableViewController {
     }
     */
 
-}
+

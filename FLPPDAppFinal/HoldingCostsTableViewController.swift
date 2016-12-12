@@ -9,6 +9,22 @@
 import UIKit
 
 class HoldingCostsTableViewController: UITableViewController {
+  
+  @IBOutlet weak var propertyTaxTextField: UITextField!
+  @IBOutlet weak var utilitiesTextField: UITextField!
+  @IBOutlet weak var insuranceTextField: UITextField!
+  @IBOutlet weak var interestPmtLabel: UILabel!
+  @IBOutlet weak var totalMortgagePmtLabel: UILabel!
+  @IBOutlet weak var holdingPeriodTextField: UITextField!
+  @IBOutlet weak var monthlyHoldingCostLabel: UILabel!
+  @IBOutlet weak var totalHoldingCostLabel: UILabel!
+  
+  
+ 
+  @IBAction func saveButton(_ sender: AnyObject) {
+    
+    self.dismiss(animated: true, completion: nil)
+  }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +43,7 @@ class HoldingCostsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+   /* override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
@@ -35,7 +51,7 @@ class HoldingCostsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
+    }*/
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

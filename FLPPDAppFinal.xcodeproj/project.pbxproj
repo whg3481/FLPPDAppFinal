@@ -15,6 +15,8 @@
 		B218B99D1DF9C51200A210C8 /* ListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B99B1DF9C51200A210C8 /* ListingVC.swift */; };
 		B218B99E1DF9C51200A210C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218B99C1DF9C51200A210C8 /* User.swift */; };
 		B218B9A31DF9D66900A210C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */; };
+		B25655A51DFDA7A5003FEDC3 /* RehabProfitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25655A41DFDA7A5003FEDC3 /* RehabProfitModel.swift */; };
+		B25655A71DFF124C003FEDC3 /* SellingCostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25655A61DFF124C003FEDC3 /* SellingCostModel.swift */; };
 		B27DDECD1DFB85F1000EA389 /* EvaluateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDECC1DFB85F1000EA389 /* EvaluateTableViewController.swift */; };
 		B27DDECF1DFBA016000EA389 /* PropertyInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDECE1DFBA016000EA389 /* PropertyInformationTableViewController.swift */; };
 		B27DDED21DFBCD1A000EA389 /* BuyingCostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDED11DFBCD1A000EA389 /* BuyingCostsTableViewController.swift */; };
@@ -51,6 +53,8 @@
 		B218B99B1DF9C51200A210C8 /* ListingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
 		B218B99C1DF9C51200A210C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B25655A41DFDA7A5003FEDC3 /* RehabProfitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RehabProfitModel.swift; sourceTree = "<group>"; };
+		B25655A61DFF124C003FEDC3 /* SellingCostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellingCostModel.swift; sourceTree = "<group>"; };
 		B27DDECC1DFB85F1000EA389 /* EvaluateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluateTableViewController.swift; sourceTree = "<group>"; };
 		B27DDECE1DFBA016000EA389 /* PropertyInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInformationTableViewController.swift; sourceTree = "<group>"; };
 		B27DDED11DFBCD1A000EA389 /* BuyingCostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyingCostsTableViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 				B218B9A21DF9D66900A210C8 /* GoogleService-Info.plist */,
 				B218B9931DF9C48A00A210C8 /* AppDelegate.swift */,
 				B2B250201DF75CB200495981 /* Main.storyboard */,
+				B25655A41DFDA7A5003FEDC3 /* RehabProfitModel.swift */,
+				B25655A61DFF124C003FEDC3 /* SellingCostModel.swift */,
 				B27DDED01DFBA023000EA389 /* Evaluation View Controllers */,
 				B27DDED31DFBCD40000EA389 /* Property Feed View Controllers */,
 				B218B99F1DF9C51900A210C8 /* Model for User Tweet */,
@@ -398,11 +404,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27DDED21DFBCD1A000EA389 /* BuyingCostsTableViewController.swift in Sources */,
+				B25655A71DFF124C003FEDC3 /* SellingCostModel.swift in Sources */,
 				B218B9991DF9C4E200A210C8 /* ListingTableViewController.swift in Sources */,
 				B27DDED91DFBCD9B000EA389 /* OtherCostsTableViewController.swift in Sources */,
 				B218B9981DF9C4E200A210C8 /* ViewController.swift in Sources */,
 				B218B9941DF9C48A00A210C8 /* AppDelegate.swift in Sources */,
 				B218B99D1DF9C51200A210C8 /* ListingVC.swift in Sources */,
+				B25655A51DFDA7A5003FEDC3 /* RehabProfitModel.swift in Sources */,
 				B27DDED51DFBCD71000EA389 /* HoldingCostsTableViewController.swift in Sources */,
 				B27DDECF1DFBA016000EA389 /* PropertyInformationTableViewController.swift in Sources */,
 				B218B99A1DF9C4E200A210C8 /* AddNewListingViewController.swift in Sources */,
