@@ -82,10 +82,7 @@ class EvaluateTableViewController: UITableViewController {
       self.performSegue(withIdentifier: "A", sender: self)
     default:
       break
-      
-      let myVC = storyboard?.instantiateViewControllerWithIdentifier("SecondVC") as! SecondVC
-      myVC.stringPassed = myLabel.text!
-      navigationController?.pushViewController(myVC, animated: true)
+
     }
     
     
