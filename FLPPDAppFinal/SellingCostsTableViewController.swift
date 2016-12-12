@@ -10,9 +10,7 @@ import UIKit
 
 class SellingCostsTableViewController: UITableViewController {
   
-  protocol SellingCostsTableViewController: NSObjectProtocol {
-    func SellingCostsViewControllerDidAdd  (_ groceryItem: GroceryItem)
-  }
+
 
   @IBOutlet weak var deedPrepFeeTextField: UITextField!
   @IBOutlet weak var releaseDeedTextField: UITextField!

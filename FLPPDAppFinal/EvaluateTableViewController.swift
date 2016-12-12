@@ -55,9 +55,10 @@ class EvaluateTableViewController: UITableViewController {
     let retainagePct = Double(retainagePctTextField.text!)
     let rehabCosts = Double(RehabCostsTextField.text!)
     let wholesaleFee = Double(wholesaleFeeTextField.text!)
+    let actualPrice = Double(purchasePriceTextField.text!)
     
     
-    var model = RehabProfitModel(ARV: arv!, actualLTV: ltv!, constRetainPct:retainagePct!, rehabCost:rehabCosts!, wholesaleFee:wholesaleFee!)
+    var model = RehabProfitModel(ARV: arv!, actualLTV: ltv!, constRetainPct:retainagePct!, rehabCost:rehabCosts!, wholesaleFee:wholesaleFee!,pPrice:actualPrice!)
     
     
     loanAmtLabel.text = String(model.loanAmountCalc())
@@ -81,6 +82,10 @@ class EvaluateTableViewController: UITableViewController {
       self.performSegue(withIdentifier: "A", sender: self)
     default:
       break
+      
+      let myVC = storyboard?.instantiateViewControllerWithIdentifier("SecondVC") as! SecondVC
+      myVC.stringPassed = myLabel.text!
+      navigationController?.pushViewController(myVC, animated: true)
     }
     
     

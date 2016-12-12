@@ -15,16 +15,17 @@ class RehabProfitModel  {
   var constructionRetainagePct : Double!
   var repairCosts : Double!
   var wholesaleFEE : Double!
-  var purchasePrice : Double!
+  var purchasePrice : Double
   
 		
   
-  init(ARV:Double, actualLTV:Double, constRetainPct:Double, rehabCost:Double, wholesaleFee:Double) {
+  init(ARV:Double, actualLTV:Double, constRetainPct:Double, rehabCost:Double, wholesaleFee:Double, pPrice:Double) {
     self.afterRepairValue = ARV
     self.actualLtvPct = actualLTV
     self.constructionRetainagePct = constRetainPct
     self.repairCosts = rehabCost
     self.wholesaleFEE = wholesaleFee
+    self.purchasePrice = pPrice
     
     
   }
@@ -42,7 +43,7 @@ class RehabProfitModel  {
   }*/
  
    func totalDevelopmentCost() -> Double {
-      return repairCosts+wholesaleFEE
+      return repairCosts+wholesaleFEE+purchasePrice
     //Rehab Costs + Buying Costs + Holding Costs + Holding Costs + Selling Costs + Other Costs + Whole Sale Fee + Purchase Price
   }
 
