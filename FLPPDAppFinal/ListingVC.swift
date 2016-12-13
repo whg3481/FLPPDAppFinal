@@ -1,8 +1,8 @@
 //
-//  FLPPDapp
+//  FLPPDapp
 //
-//  Created by New User on 12/1/16.
-//  Copyright © 2016 Will Garner. All rights reserved.
+//  Created by New User on 12/1/16.
+//  Copyright © 2016 Will Garner. All rights reserved.
 //
 
 import Foundation
@@ -11,33 +11,30 @@ import FirebaseDatabase
 
 struct Listing {
   
-  let key: String!
-  let addedByUser: String!
-  let address: String!
-  let itemRef: FIRDatabaseReference?
+   let key: String!
+   let address: String!
+   let ARV: String!
+   let itemRef: FIRDatabaseReference?
   
-  init(addedByUser:String, key:String = "", address: String) {
-    self.key = key
- 
-    self.address = address
-    self.addedByUser = addedByUser
-    self.itemRef = nil
-  }
+  init(key:String = "", address: String, afterRepairValue:String) {
+     self.key = key
+     self.address = address
+     self.ARV = afterRepairValue
+     self.itemRef = nil
+     }
   
-  init (snapshot: FIRDataSnapshot) {
+   init (snapshot: FIRDataSnapshot) {
     
     
-    key = snapshot.key
-    itemRef = snapshot.ref
+      key = snapshot.key
+      itemRef = snapshot.ref
+      let snapshotValue = snapshot.value as! [String:AnyObject]
+      address = snapshotValue["address"] as? String ?? "no address"
+      ARV = snapshotValue["After Repair Value"] as? String ?? "no price"
     
-    let snapshotValue = snapshot.value as! [String:AnyObject]
-    
-    addedByUser = "Will"
-    //addedByUser = snapshotValue["addedByUser"] as! String
-    address = snapshotValue["address"] as! String
-    
-  }
-  func toAnyObject() -> Any {
-    return ["address":address, "addedByUser": addedByUser, "key": key]
-  }
+     }
+   func toAnyObject() -> Any {
+      return ["address":address, "After Repair Value": ARV, "key": key]
+     }
 }
+

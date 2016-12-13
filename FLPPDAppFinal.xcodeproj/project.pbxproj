@@ -29,6 +29,8 @@
 		B2B250271DF75CB200495981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B250261DF75CB200495981 /* Assets.xcassets */; };
 		B2B2502A1DF75CB200495981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B250281DF75CB200495981 /* LaunchScreen.storyboard */; };
 		B2B250351DF75CB300495981 /* FLPPDAppFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B250341DF75CB300495981 /* FLPPDAppFinalTests.swift */; };
+		B2B8D8581E00727C00B20F91 /* FLPPDCalcicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8D8571E00727C00B20F91 /* FLPPDCalcicon.png */; };
+		B2B8D85A1E0072CE00B20F91 /* FLPPDcalculatoricon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8D8591E0072CE00B20F91 /* FLPPDcalculatoricon.png */; };
 		E3C3B22ED72E340472A18772 /* Pods_FLPPDAppFinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0910F43AD26D08831237A3D /* Pods_FLPPDAppFinalTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		B2B250301DF75CB300495981 /* FLPPDAppFinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLPPDAppFinalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B250341DF75CB300495981 /* FLPPDAppFinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLPPDAppFinalTests.swift; sourceTree = "<group>"; };
 		B2B250361DF75CB300495981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B8D8571E00727C00B20F91 /* FLPPDCalcicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FLPPDCalcicon.png; sourceTree = "<group>"; };
+		B2B8D8591E0072CE00B20F91 /* FLPPDcalculatoricon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FLPPDcalculatoricon.png; sourceTree = "<group>"; };
 		C373BD8A563C18A316A65F77 /* Pods_FLPPDAppFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLPPDAppFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB99C14AE05A08BE983DB7C8 /* Pods-FLPPDAppFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLPPDAppFinal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLPPDAppFinal/Pods-FLPPDAppFinal.debug.xcconfig"; sourceTree = "<group>"; };
 		F0910F43AD26D08831237A3D /* Pods_FLPPDAppFinalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLPPDAppFinalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +174,8 @@
 				B218B99F1DF9C51900A210C8 /* Model for User Tweet */,
 				B2B250261DF75CB200495981 /* Assets.xcassets */,
 				B29221F41DFB589000C2788A /* 300New Centuri Advisors Logo No Background.png */,
+				B2B8D8591E0072CE00B20F91 /* FLPPDcalculatoricon.png */,
+				B2B8D8571E00727C00B20F91 /* FLPPDCalcicon.png */,
 				B2B250281DF75CB200495981 /* LaunchScreen.storyboard */,
 				B2B2502B1DF75CB200495981 /* Info.plist */,
 				B2B250231DF75CB200495981 /* FLPPDAppFinal.xcdatamodeld */,
@@ -288,10 +294,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B8D8581E00727C00B20F91 /* FLPPDCalcicon.png in Resources */,
 				B2B2502A1DF75CB200495981 /* LaunchScreen.storyboard in Resources */,
 				B2B250271DF75CB200495981 /* Assets.xcassets in Resources */,
 				B2B250221DF75CB200495981 /* Main.storyboard in Resources */,
 				B29221F51DFB589000C2788A /* 300New Centuri Advisors Logo No Background.png in Resources */,
+				B2B8D85A1E0072CE00B20F91 /* FLPPDcalculatoricon.png in Resources */,
 				B218B9A31DF9D66900A210C8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

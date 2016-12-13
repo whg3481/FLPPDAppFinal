@@ -16,7 +16,7 @@ protocol AddListingViewControllerDelegate: class {
 
 
 class AddNewListingViewController: UIViewController {
-
+  
   var dbRef:FIRDatabaseReference!
   
   @IBOutlet weak var Address: UITextField!
@@ -30,11 +30,12 @@ class AddNewListingViewController: UIViewController {
   @IBAction func ListButton(_ sender: UIButton) {
     
     
-      
+    
     
     let dictionary = ["address":Address.text!,"zipcode":Zipcode.text!,"State":State.text!,"City":City.text!,"After Repair Value":ARV.text!,"List Price":ListPrice.text!,"Property Description":PropertyDescription.text!]
     
-    let propertyListing = self.dbRef.childByAutoId()
+    dbRef = FIRDatabase.database().reference().child("listing-items")
+    let propertyListing = self.dbRef.childByAutoId() //.childByAutoId()
     propertyListing.setValue(dictionary)
     
     
@@ -48,29 +49,29 @@ class AddNewListingViewController: UIViewController {
     presentingViewController?.dismiss(animated: true, completion: nil)
   }
   
-    override func viewDidLoad() {  
-        super.viewDidLoad()
-
-      
-      dbRef = FIRDatabase.database().reference().childByAutoId()
-  
-      
-  }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
+    
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  /*
+   // MARK: - USE This for seguing to detail view controller about the property information
+   
+   // In a storyboard-based application, you will often want to do a little preparation before navigation
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   // Get the new view controller using segue.destinationViewController.
+   // Pass the selected object to the new view controller.
+   }
+   */
+  
 }

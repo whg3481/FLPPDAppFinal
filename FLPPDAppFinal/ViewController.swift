@@ -41,10 +41,12 @@ class TableViewController: UITableViewController {
   
   @IBAction func newListing(_ sender: AnyObject) {
   }
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
+
+ 
     
     tableView.delegate = self
     tableView.dataSource = self
@@ -62,14 +64,14 @@ class TableViewController: UITableViewController {
       self.tableView.reloadData()
       
       
-    
+      
     })
-  
-  
-post()
-  
+    
+    
+    post()
+    
   }
-
+  
   
   func post()  {
     
@@ -88,18 +90,18 @@ post()
   
   
   // This is the Function for the TableView that displays my sections
-override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-  return posts.count
-  // This is original code that works from posting dummy post
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return posts.count
+    // This is original code that works from posting dummy post
     
-return posts.count
+    return posts.count
   }
-
-/*  func fetchListings()
-  {
-    refHandle = ref.child("Listing").observe(.childAdded, with: ()
-  }*/
-
+  
+  /*  func fetchListings()
+   {
+   refHandle = ref.child("Listing").observe(.childAdded, with: ()
+   }*/
+  
   
   
   //This is the function that displays the Text that will go in the Cell of my tableview on the main listing screen where listings from ALL users //will be displayed. I need to adjust this to consume the information from the actual AddNewListingVC
@@ -123,5 +125,4 @@ return posts.count
   
   //The End of my code
 }
-
 
