@@ -764,8 +764,8 @@
                             </tableViewSection>
                         </sections>
                         <connections>
-                            <outlet property="dataSource" destination="g78-9c-wzR" id="B6o-lf-Uc0"/>
-                            <outlet property="delegate" destination="g78-9c-wzR" id="8oP-51-v4C"/>
+                            <outlet property="dataSource" destination="g78-9c-wzR" id="beh-cv-9nO"/>
+                            <outlet property="delegate" destination="g78-9c-wzR" id="aAh-fM-cCV"/>
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -810,7 +810,7 @@
                         <viewControllerLayoutGuide type="top" id="Zar-WA-BpH"/>
                         <viewControllerLayoutGuide type="bottom" id="Abp-Q8-Ely"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="uQj-X7-kSb">
+                    <view key="view" contentMode="scaleToFill" id="uQj-X7-kSb">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -844,7 +844,7 @@
         <scene sceneID="6Kh-cl-9Nn">
             <objects>
                 <tableViewController storyboardIdentifier="B" title="Buying Costs" id="o6X-sL-vn9" customClass="BuyingCostsTableViewController" customModule="FLPPDAppFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="L8a-jX-j4J">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="L8a-jX-j4J">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1063,7 +1063,7 @@
         <scene sceneID="OH8-Oy-udE">
             <objects>
                 <tableViewController storyboardIdentifier="A" id="4Aj-8F-1bp" customClass="PropertyInformationTableViewController" customModule="FLPPDAppFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3FH-BV-pok">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3FH-BV-pok">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1484,7 +1484,7 @@
         <!--Navigation Controller-->
         <scene sceneID="uqI-fw-aXW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lpi-dA-d3G" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="buying" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lpi-dA-d3G" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dT9-0f-96u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1568,7 +1568,7 @@
         <scene sceneID="gih-Dc-Qe5">
             <objects>
                 <tableViewController id="HhG-OX-x6p" customClass="HoldingCostsTableViewController" customModule="FLPPDAppFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qp8-OU-eRr">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qp8-OU-eRr">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1877,7 +1877,7 @@
         <scene sceneID="FMe-Vs-wSJ">
             <objects>
                 <tableViewController id="fFS-ZD-RUu" customClass="SellingCostsTableViewController" customModule="FLPPDAppFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zR1-js-U0y">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zR1-js-U0y">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2186,7 +2186,7 @@
         <scene sceneID="Ven-tt-zEn">
             <objects>
                 <tableViewController id="ILK-n0-vby" customClass="OtherCostsTableViewController" customModule="FLPPDAppFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EkS-UT-jzQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EkS-UT-jzQ">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

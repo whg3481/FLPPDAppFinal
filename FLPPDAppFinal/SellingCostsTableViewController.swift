@@ -23,12 +23,16 @@ class SellingCostsTableViewController: UITableViewController {
   
   @IBAction func saveButton(_ sender: AnyObject) {
     
+    var stringPassed = ""
+    
     self.dismiss(animated: true, completion: nil)
   }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      //realEstateCommissionLabel.text = stringPassed
 
+      
     }
 
   

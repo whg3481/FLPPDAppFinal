@@ -37,7 +37,6 @@ class EvaluateTableViewController: UITableViewController {
   @IBOutlet weak var retainagePctTextField: UITextField!
   @IBOutlet weak var retainageAmountLabel: UILabel!
 
-
   
   
   
@@ -77,13 +76,22 @@ class EvaluateTableViewController: UITableViewController {
 
   
    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  {
+    
+    
+    
     switch indexPath.row {
     case 0:
       self.performSegue(withIdentifier: "A", sender: self)
     default:
       break
+      
+     
 
     }
+    
+    /*let EvalTVC = storyboard?.instantiateInitialViewController("sellingCostTVC") as! SellingCostsTableViewController
+    EvalTVC.stringPassed = arv.text!
+    navigationController?.pushViewController(EvalTVC, animated: true)*/
     
     
     }
@@ -96,6 +104,7 @@ class EvaluateTableViewController: UITableViewController {
     self.navigationController?.pushViewController(viewController!, animated: true)*/
 
   }
+
   
     // MARK: - Table view data source
 
