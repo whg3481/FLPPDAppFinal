@@ -15,10 +15,14 @@ class EvaluateTableViewController: UITableViewController {
   
   @IBOutlet weak var afterRepairValueTextField: UITextField!
   @IBOutlet weak var RehabCostsTextField: UITextField!
-  @IBOutlet weak var buyingCostsLabel: UILabel!
-  @IBOutlet weak var holdingCostsLabel: UILabel!
-  @IBOutlet weak var sellingCostsLabel: UILabel!
-  @IBOutlet weak var otherCostsLabel: UILabel!
+  @IBOutlet weak var escrowFeesLabel: UILabel!
+  @IBOutlet weak var loanDocPrepFeesLabel: UILabel!
+  @IBOutlet weak var titleInsuranceLabel: UILabel!
+  @IBOutlet weak var realEstateCommissionLabel: UILabel!
+  @IBOutlet weak var realEstateCommissionTextField: UITextField!
+  @IBOutlet weak var prepaidInterestLabel: UILabel!
+  @IBOutlet weak var miscLenderFeesLabel: UILabel!
+ 
   @IBOutlet weak var wholesaleFeeTextField: UITextField!
   @IBOutlet weak var purchasePriceTextField: UITextField!
   @IBOutlet weak var totalCostsLabel: UILabel!
@@ -26,18 +30,20 @@ class EvaluateTableViewController: UITableViewController {
   @IBOutlet weak var downPMTPctTextField: UITextField!
   @IBOutlet weak var interestRatePctTextField: UITextField!
   @IBOutlet weak var originationFeeTextField: UITextField!
+  @IBOutlet weak var originationFeeLabel: UILabel!
   @IBOutlet weak var downPMTLabel: UILabel!
   @IBOutlet weak var loanToCostPctLabel: UILabel!
   @IBOutlet weak var loanAmtLabel: UILabel!
   @IBOutlet weak var projectedProfitLabel: UILabel!
   @IBOutlet weak var cashRequiredLabel: UILabel!
-  @IBOutlet weak var actualLoanToCostLabel: UILabel!
   @IBOutlet weak var yieldPctLabel: UILabel!
   @IBOutlet weak var returnOnInvestmentPctLabel: UILabel!
   @IBOutlet weak var retainagePctTextField: UITextField!
   @IBOutlet weak var retainageAmountLabel: UILabel!
+  @IBOutlet weak var dailyRate: UILabel!
+  @IBOutlet weak var monthlyPayment: UILabel!
 
-  
+  //HOW TO ADD $$$  $\(listing.ARV!)
   
   
     override func viewDidLoad() {
@@ -55,9 +61,15 @@ class EvaluateTableViewController: UITableViewController {
     let rehabCosts = Double(RehabCostsTextField.text!)
     let wholesaleFee = Double(wholesaleFeeTextField.text!)
     let actualPrice = Double(purchasePriceTextField.text!)
+    let lenderPoints = Double(originationFeeTextField.text!)
+    let recomm = Double(realEstateCommissionTextField.text!)
+    let interest = Double(interestRatePctTextField.text!)
     
     
-    var model = RehabProfitModel(ARV: arv!, actualLTV: ltv!, constRetainPct:retainagePct!, rehabCost:rehabCosts!, wholesaleFee:wholesaleFee!,pPrice:actualPrice!)
+    //Test on formatting cells 
+   
+    
+    var model = RehabProfitModel(ARV: arv!, actualLTV: ltv!, constRetainPct:retainagePct!, rehabCost:rehabCosts!, wholesaleFee:wholesaleFee!,pPrice:actualPrice!,reFee:recomm!,originationPoints:lenderPoints!, intRate:interest!)
     
     
     loanAmtLabel.text = String(model.loanAmountCalc())
@@ -70,6 +82,33 @@ class EvaluateTableViewController: UITableViewController {
     
     //Net Profit
     projectedProfitLabel.text = String(model.netProfit())
+    
+    //Title Insurance Fees
+    titleInsuranceLabel.text = String(model.calcTitleInsurance())
+    
+    //Pre-Paid Interest
+    prepaidInterestLabel.text = String(model.calcPrePaidInterest())
+    
+    //misc. Closing Costs
+    miscLenderFeesLabel.text = String(model.calcMiscLenderFees())
+    
+    //Real Estate Commission
+    realEstateCommissionLabel.text = String(model.calcRealEstateCommission())
+    
+    //Origination Fees
+    originationFeeLabel.text = String(model.calcOriginationPoints())
+    
+    //monthly payment label
+    monthlyPayment.text = String(model.calcMonthlyPayment())
+    
+    //daily payment rate
+    dailyRate.text = String(model.calcDailyRate())
+    
+    //How much Cash needs to be brought to closing
+    cashRequiredLabel.text = String(model.cashRequiredforClosing())
+    
+    //Return on Investment Percentage
+    returnOnInvestmentPctLabel.text = String(model.calcROI())
     
   }
   
@@ -85,9 +124,8 @@ class EvaluateTableViewController: UITableViewController {
     default:
       break
       
-     
-
     }
+    
     
     /*let EvalTVC = storyboard?.instantiateInitialViewController("sellingCostTVC") as! SellingCostsTableViewController
     EvalTVC.stringPassed = arv.text!
@@ -95,6 +133,20 @@ class EvaluateTableViewController: UITableViewController {
     
     
     }
+  
+  override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
+  {
+    // 1. Set the initial state of the cell
+    cell.alpha = 0
+    let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 20, 0)
+    cell.layer.transform = transform
+    
+    // 2. Use UIView animation method to chage to the final state of the cell
+    UIView.animate(withDuration: 1.0) {
+      cell.alpha = 1.0
+      cell.layer.transform = CATransform3DIdentity
+    }
+  }
   
   
 

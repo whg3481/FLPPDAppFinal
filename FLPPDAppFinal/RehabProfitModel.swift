@@ -16,16 +16,23 @@ class RehabProfitModel  {
   var repairCosts : Double!
   var wholesaleFEE : Double!
   var purchasePrice : Double
+  var originationFee : Double!
+  var realEstateFee : Double!
+  var interestRate : Double!
   
 		
   
-  init(ARV:Double, actualLTV:Double, constRetainPct:Double, rehabCost:Double, wholesaleFee:Double, pPrice:Double) {
+  init(ARV:Double, actualLTV:Double, constRetainPct:Double, rehabCost:Double, wholesaleFee:Double, pPrice:Double, reFee:Double, originationPoints:Double, intRate:Double) {
     self.afterRepairValue = ARV
     self.actualLtvPct = actualLTV
     self.constructionRetainagePct = constRetainPct
     self.repairCosts = rehabCost
     self.wholesaleFEE = wholesaleFee
     self.purchasePrice = pPrice
+    self.originationFee = originationPoints
+    self.realEstateFee = reFee
+    self.interestRate = intRate
+    
     
     
   }
@@ -33,6 +40,7 @@ class RehabProfitModel  {
   func loanAmountCalc() -> Double {
     return afterRepairValue*actualLtvPct
   }
+  
   
   /*func monthlyPmt() -> Double {
     return
@@ -43,8 +51,8 @@ class RehabProfitModel  {
   }*/
  
    func totalDevelopmentCost() -> Double {
-      return repairCosts+wholesaleFEE+purchasePrice
-    //Rehab Costs + Buying Costs + Holding Costs + Holding Costs + Selling Costs + Other Costs + Whole Sale Fee + Purchase Price
+      return repairCosts+wholesaleFEE+purchasePrice+calcRealEstateCommission()+calcOriginationPoints()+calcMiscLenderFees()+calcTitleInsurance()+calcPrePaidInterest()
+    
   }
 
   
@@ -55,6 +63,44 @@ class RehabProfitModel  {
   func netProfit() -> Double {
     return afterRepairValue-totalDevelopmentCost()
   }
+  
+  func calcTitleInsurance() -> Double {
+    return afterRepairValue*(0.01)
+  }
+  
+  func calcPrePaidInterest() -> Double {
+    return loanAmountCalc()*(0.025)
+    
+  }
+  
+  func calcMiscLenderFees() -> Double {
+    return loanAmountCalc()*(0.015)
+  }
+  
+  func calcOriginationPoints() -> Double {
+    return loanAmountCalc()*originationFee
+  }
+  
+  func calcRealEstateCommission() -> Double {
+    return afterRepairValue*realEstateFee
+  }
+  
+  func calcMonthlyPayment() -> Double {
+    return (loanAmountCalc()*interestRate)/(12)
+  }
+  
+  func calcDailyRate() -> Double {
+    return (loanAmountCalc()*interestRate)/(365)
+  }
+  
+  func cashRequiredforClosing() -> Double {
+    return (totalDevelopmentCost()-loanAmountCalc())
+  }
+  
+  func calcROI() -> Double {
+    return ((netProfit()-cashRequiredforClosing())/cashRequiredforClosing())
+  }
+  
   
 /* func realEstateCommission() -> Double {
     return afterRepairValue*reCommission
